@@ -1,0 +1,45 @@
+﻿<div id="admin-view">
+	<div class="row header-wrapper">
+		<div class="col-sm-8">
+			<h2>Report Admin</h2>
+			<p>Report settings</p>
+		</div>
+		<div class="col-sm-4">
+			<button class="pull-right btn btn-primary">Next &raquo</button>
+		</div>
+	</div>
+
+	<div class="row content-wrapper">
+		<!--		<div loading-spinner="projects.loading()">-->
+		<div class="col-sm-4">
+			<section>
+				<h4>Environments</h4>
+				<div class="input-group">
+					<form role="form" class="form-inline" ng-submit="addEnvironment(environment)">
+						<div class="form-group">
+							<div class="input-group">
+								<input type="text" class="form-control" placeholder="Add Environment" ng-model="environment.name">
+								<span class="input-group-btn">
+									<button class="btn btn-primary" type="submit">Add</button>
+								</span>
+							</div>
+						</div>
+					</form>
+				</div>
+				<ul class="list-group">
+					<li class="list-group-item" ng-repeat="environment in environments">
+						<span class="pull-right glyphicon glyphicon-trash" aria-hidden="true" ng-click="deleteEnvironment(environment)"></span>
+						{{environment.name}}
+					</li>
+				</ul>
+			</section>
+		</div>
+		<!--<div class="col-offset-1 col-sm-3">
+			<div class="clearfix well well-sm" ng-repeat="subsystem in subsystems">
+				<div>{{subsystem.name}}</div>
+			</div>
+		</div>-->
+	</div>
+</div>
+
+

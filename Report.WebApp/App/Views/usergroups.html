@@ -1,0 +1,35 @@
+﻿<div class="usergroup-view">
+	<div class="row header-wrapper">
+		<div class="col-sm-5">
+			<h2>User Groups</h2>
+			<p>Select your user group and click next</p>
+		</div>
+		<div class="col-sm-4">
+			<div class="ko-filter">
+				<input class="form-control" type="text" placeholder="Filter User Groups" ng-model="usergroupfilter.Name" />
+			</div>
+		</div>
+		<div class="col-sm-3">
+			<button class="pull-right btn btn-primary" ng-disabled="!selected" ng-click="next()">Next &raquo;</button>
+			<button class="pull-right btn btn-primary" ng-click="back()">&laquo; Back</button>
+		</div>
+	</div>
+
+	<div class="row content-wrapper">
+		<div loading-spinner="usergroups.loading()">
+			<div class="col-sm-9">
+				<div class="clearfix well well-sm" ng-repeat="usergroup in usergroups.data|filter:usergroupfilter|orderBy:'Name'" ng-click="select(usergroup)">
+					<div class="pull-left" style="padding-right:15px">
+						<img src="assets/images/groupicon.gif" />
+					</div>
+					<div class="pull-left usergroup-text">
+						<div>{{usergroup.Name}}</div>
+					</div>
+					<div class="pull-right" ng-show="isSelected(usergroup)">
+						<img src="assets/images/Check.gif" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

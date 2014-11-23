@@ -1,0 +1,52 @@
+﻿<div class="row header-wrapper">
+	<div class="col-sm-12">
+		<h2>Summary</h2>
+		<p>Summary of your delivery selections</p>
+	</div>
+</div>
+<div class="row content-wrapper summary-content">
+	<div class="col-sm-12">
+
+		<h3>Deliver</h3>
+		<ul>
+			<li>Selected Project: {{export.selectedProject.Name}}</li>
+			<li>Selected Folder: {{export.selectedFolder.Name}}</li>
+		</ul>
+
+		<h3>Load File</h3>
+		<ul>
+			<li>Concordance Delimited Metadata File (.DAT)</li>
+			<li>IPRO Image Index File (.LFP)</li>
+			<li>Opticon Image Index File (.OPT)</li>
+			<li>Files will use code page 1252</li>
+			<li>Maximum metadata file size: 1024 MB</li>
+		</ul>
+
+		<h3>Image</h3>
+		<ul>
+			<li>Image Option: {{config.data.ImageOption}}</li>
+		</ul>
+		<h3>Text</h3>
+		<ul>
+			<li>One text file per document</li>
+			<li>No OCR</li>
+			<li>Exclude text behind redactions</li>
+			<li>Limit to 80 chars per line</li>
+		</ul>
+
+		<h3>Native</h3>
+		<ul>
+			<li>No native files</li>
+		</ul>
+
+		<h3>Media</h3>
+		<ul>
+			<li>Media Option: {{config.data.MediaOption}}</li>
+			<li>Maximum volume folder size: 600 MB</li>
+			<li>Maximum image/text files per folder: 500</li>
+		</ul>
+
+		<h3>Delivery</h3>
+
+	</div>
+</div>
