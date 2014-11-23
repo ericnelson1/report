@@ -33,7 +33,7 @@ angular.module('app.directives')
         },
         templateUrl: 'app/views/loading.html',
         link: function (scope, element, attrs) {
-            var spinner = new Spinner().spin();
+        	var spinner = new Spinner({length: 5, width: 2, radius: 3, top: '21px', left: '90%' }).spin();
             var loadingContainer = element.find('.loading-spinner-container')[0];
             loadingContainer.appendChild(spinner.el);
         }

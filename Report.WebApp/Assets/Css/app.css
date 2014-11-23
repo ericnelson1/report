@@ -6288,9 +6288,6 @@ body {
     padding-top: 125px;
   }
 }
-.loading-spinner-container {
-  height: 100px;
-}
 #admin-view section ul {
   height: 261px;
   margin-top: 10px;
@@ -6303,7 +6300,8 @@ body {
   height: 20px;
   width: 20px;
 }
-#admin-view section .glyphicon-trash {
+#admin-view section .glyphicon-trash,
+#admin-view section .glyphicon-refresh {
   cursor: pointer;
 }
 .well {

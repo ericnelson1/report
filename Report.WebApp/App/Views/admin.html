@@ -10,12 +10,17 @@
 	</div>
 
 	<div class="row content-wrapper">
-		<!--		<div loading-spinner="projects.loading()">-->
 		<div class="col-sm-4">
 			<section>
-				<h4>Environments</h4>
+				<h4>
+					Environments
+					<div class="pull-right" loading-spinner="environments.inprogress">
+						<div class="pull-right glyphicon glyphicon-refresh" aria-hidden="true" ng-click="environments.load()"></div>
+					</div>
+				</h4>
+				
 				<div class="input-group">
-					<form role="form" class="form-inline" ng-submit="addEnvironment(environment)">
+					<form role="form" class="form-inline" ng-submit="environments.add(environment)">
 						<div class="form-group">
 							<div class="input-group">
 								<input type="text" class="form-control" placeholder="Add Environment" ng-model="environment.name">
@@ -27,8 +32,8 @@
 					</form>
 				</div>
 				<ul class="list-group">
-					<li class="list-group-item" ng-repeat="environment in environments">
-						<span class="pull-right glyphicon glyphicon-trash" aria-hidden="true" ng-click="deleteEnvironment(environment)"></span>
+					<li class="list-group-item" ng-repeat="environment in environments.items">
+						<span class="pull-right glyphicon glyphicon-trash" aria-hidden="true" ng-click="environments.delete(environment)"></span>
 						{{environment.name}}
 					</li>
 				</ul>
