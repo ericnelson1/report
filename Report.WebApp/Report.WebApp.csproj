@@ -78,8 +78,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App\app.js" />
-    <Content Include="App\Controllers\admin.js" />
+    <Content Include="App\Controllers\item.js" />
     <Content Include="App\Controllers\documents.js" />
+    <Content Include="App\Controllers\widget.js" />
     <Content Include="App\Directives\tree.js" />
     <Content Include="App\Controllers\navbar.js" />
     <Content Include="App\Controllers\projects.js" />
@@ -87,13 +88,15 @@
     <Content Include="App\Directives\directives.js" />
     <Content Include="App\Services\data.js" />
     <Content Include="App\Services\services.js" />
-    <Content Include="App\Views\admin.html" />
+    <Content Include="App\Views\item.html" />
     <Content Include="App\Views\documents.html" />
     <Content Include="App\Controllers\report.js" />
     <Content Include="App\Views\loading.html" />
     <Content Include="App\Views\projects.html" />
     <Content Include="App\Views\summary.html" />
     <Content Include="App\Controllers\summary.js" />
+    <Content Include="App\Views\widget-detail.html" />
+    <Content Include="App\Views\widget.html" />
     <Content Include="App\Views\text.html" />
     <Content Include="App\Views\usergroups.html" />
     <Content Include="Assets\Css\app.css">

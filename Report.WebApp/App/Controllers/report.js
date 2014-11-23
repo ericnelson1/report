@@ -1,17 +1,18 @@
 ﻿'use strict';
 
 angular.module('app.controllers', [])
-.controller("ReportController", ['$scope', '$location', '$window', 'reportService',
-	function ($scope, $location, $window, reportService) {
+.controller("ReportController", ['$scope', '$location', 
+	function ($scope, $location) {
 		$scope.$root.title = 'Report';
 
 		$scope.navOptions = [
-			{ key: 'admin', display: 'Administrator', show: true },
+			{ key: 'item', display: 'Items', show: true },
+			{ key: 'widget', display: 'Widgets', show: true },
 			{ key: 'projects', display: 'Projects', show: false },
-			{ key: 'usergroups', display: 'User Groups', show: false }, // edr
-			{ key: 'documents', display: 'Documents', show: false }, // edr
+			{ key: 'usergroups', display: 'User Groups', show: false }, 
+			{ key: 'documents', display: 'Documents', show: false }, 
 			{ key: 'summary', display: 'Summary', show: false }
-	];
+		];
 
 		var showNavOptions = function (event, args) {
 			$scope.navOptions.forEach(function (navOption) {
@@ -31,19 +32,6 @@ angular.module('app.controllers', [])
 					case 'documents':
 						show = (edr && usergroup);
 						break;
-					case 'savedsearches':
-						show = relativity;
-						break;
-					case 'markupsets':
-						show = relativity;
-						break;
-					case 'loadfiles':
-					case 'fields':
-					case 'image':
-					case 'text':
-					case 'native':
-					case 'media':
-					case 'delivery':
 					case 'summary':
 					case 'status':
 						show = true;

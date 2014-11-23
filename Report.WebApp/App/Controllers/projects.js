@@ -1,8 +1,8 @@
 ﻿'use strict';
 
 angular.module('app.controllers')
-.controller("ProjectController", ['$scope', '$state', '$timeout', '$location', '$window', 'reportService',
-	function ($scope, $state, $timeout, $location, $window, reportService) {
+.controller("ProjectController", ['$scope', '$state',
+	function ($scope, $state) {
 		$scope.$root.title = 'Project';
 /*
 		$scope.projects = projectService;

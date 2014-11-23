@@ -1,0 +1,51 @@
+﻿<div id="system-view">
+	<div class="row header-wrapper">
+		<div class="col-sm-8">
+			<h2>Widgets</h2>
+			<p>Manage multi-field widgets</p>
+		</div>
+		<div class="col-sm-4">
+			<button class="pull-right btn btn-primary">Button</button>
+		</div>
+	</div>
+
+	<div class="row content-wrapper">
+		<div class="col-sm-4">
+			<section>
+				<h4>
+					Widgets
+					<div class="pull-right" loading-spinner="widgets.inprogress">
+						<div class="pull-right glyphicon glyphicon-refresh" aria-hidden="true" ng-click="widgets.load()"></div>
+					</div>
+				</h4>
+				<button class="btn btn-primary" ng-click="new()" data-toggle="modal" href="#editModal">Create New</button>
+
+				<table class='table table-striped'>
+					<thead>
+						<tr>
+							<th>Event</th>
+							<th>&nbsp;</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr ng-repeat='event in events'>
+							<td>{{event.name}}</td>
+							<td><button role='button' class='btn' ng-click="editEvent(event)" data-toggle="modal" href="#editModal">Edit</button></td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="modal hide fade" ng-include="'app/views/widget-detail.html'" id="editModal" role='dialog'></div>
+
+				<ul class="list-group">
+					<li class="list-group-item" ng-repeat="widget in widgets.items">
+						<span class="pull-right glyphicon glyphicon-trash" aria-hidden="true" ng-click="widgets.delete(widget)"></span>
+						<span>Name: {{widget.name}}</span><br />
+						<span>Age: {{widget.age}}</span>
+					</li>
+				</ul>
+			</section>
+		</div>
+	</div>
+</div>
+
+

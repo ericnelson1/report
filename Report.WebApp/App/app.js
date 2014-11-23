@@ -1,6 +1,6 @@
 ﻿'use strict';
 
-angular.module('app', ['ui.router', 'ngAnimate', 'ngResource', 'app.controllers', 'app.services', 'app.directives'])
+angular.module('app', ['ui.router', 'ui.bootstrap', 'ngAnimate', 'ngResource', 'app.controllers', 'app.services', 'app.directives'])
 
     // Gets executed during the provider registrations and configuration phase. Only providers and constants can be
     // injected here. This is to prevent accidental instantiation of services before they have been fully configured.
@@ -22,10 +22,16 @@ angular.module('app', ['ui.router', 'ngAnimate', 'ngResource', 'app.controllers'
                 abstract: true,
                 templateUrl: ''
             })
-			.state('admin', {
-				url: '/admin',
-				templateUrl: 'app/views/admin.html',
-				controller: 'AdminController',
+			.state('item', {
+				url: '/item',
+				templateUrl: 'app/views/item.html',
+				controller: 'ItemController',
+				data: 'slideLeft'
+			})
+			.state('widget', {
+				url: '/widget',
+				templateUrl: 'app/views/widget.html',
+				controller: 'WidgetController',
 				data: 'slideLeft'
 			})
 			.state('projects', {
@@ -70,7 +76,7 @@ angular.module('app', ['ui.router', 'ngAnimate', 'ngResource', 'app.controllers'
     // can be injected here. This is to prevent further system configuration during application run time.
     .run(['$templateCache', '$rootScope', '$state', '$stateParams', function ($templateCache, $rootScope, $state, $stateParams) {
 
-        $state.go('admin');
+        $state.go('item');
         
     	// <ui-view> contains a pre-rendered template for the current view
     	// caching it will prevent a round-trip to a server at the first page load

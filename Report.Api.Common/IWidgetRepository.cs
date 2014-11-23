@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace Report.Api.Common
 {
-	public interface IEnvironmentRepository
+	public interface IWidgetRepository
 	{
-		IQueryable<Environment> GetAll();
-		Environment Get(int id);
-		Environment Add(Environment item);
+		IQueryable<Widget> GetAll();
+		Widget Get(int id);
+		Widget Add(Widget item);
 		void Remove(int id);
-		bool Update(Environment item);
+		bool Update(Widget item);
 	}
 }

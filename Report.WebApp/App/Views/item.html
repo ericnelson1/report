@@ -1,0 +1,45 @@
+﻿<div id="admin-view">
+	<div class="row header-wrapper">
+		<div class="col-sm-8">
+			<h2>Items</h2>
+			<p>Manage simple list of items</p>
+		</div>
+		<div class="col-sm-4">
+			<button class="pull-right btn btn-primary">Button</button>
+		</div>
+	</div>
+
+	<div class="row content-wrapper">
+		<div class="col-sm-4">
+			<section>
+				<h4>
+					Items
+					<div class="pull-right" loading-spinner="items.inprogress">
+						<div class="pull-right glyphicon glyphicon-refresh" aria-hidden="true" ng-click="items.load()"></div>
+					</div>
+				</h4>
+				
+				<div class="input-group">
+					<form role="form" class="form-inline" ng-submit="items.add(item)">
+						<div class="form-group">
+							<div class="input-group">
+								<input type="text" class="form-control" placeholder="Add Item" ng-model="item.name">
+								<span class="input-group-btn">
+									<button class="btn btn-primary" type="submit">Add</button>
+								</span>
+							</div>
+						</div>
+					</form>
+				</div>
+				<ul class="list-group">
+					<li class="list-group-item" ng-repeat="item in items.items">
+						<span class="pull-right glyphicon glyphicon-trash" aria-hidden="true" ng-click="items.delete(item)"></span>
+						{{item.name}}
+					</li>
+				</ul>
+			</section>
+		</div>
+	</div>
+</div>
+
+

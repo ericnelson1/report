@@ -159,6 +159,6 @@
     };
 
     angular.module('app.services')
-    .service('environmentService', dataService2)
-    .service('subsystemService', dataService);
+    .service('itemService', dataService2)
+    .service('widgetService', dataService2);
 })();

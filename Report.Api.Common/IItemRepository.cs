@@ -6,9 +6,12 @@ using System.Threading.Tasks;
 
 namespace Report.Api.Common
 {
-	public class Environment
+	public interface IItemRepository
 	{
-		public int Id { get; set; }
-		public string Name { get; set; }
+		IQueryable<Item> GetAll();
+		Item Get(int id);
+		Item Add(Item item);
+		void Remove(int id);
+		bool Update(Item item);
 	}
 }

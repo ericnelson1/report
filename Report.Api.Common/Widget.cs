@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace Report.Api.Common
 {
-	public interface IReportRepository
+	public class Widget
 	{
+		public int Id { get; set; }
+		public string Name { get; set; }
+		public int Age { get; set; }
 	}
 }
