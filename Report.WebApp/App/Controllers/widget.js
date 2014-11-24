@@ -58,6 +58,11 @@ angular.module('app.controllers')
 	};
 
 	$scope.ok = function () {
+		// causes the show-errors directive to show the fields with validation errors
+		$scope.$broadcast('show-errors-check-validity');
+		if ($scope.widgetForm.$invalid) { return; }
+		// add the item
+
 		$modalInstance.close($scope.selected.item);
 	};
 

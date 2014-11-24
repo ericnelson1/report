@@ -29,25 +29,24 @@ body {
     overflow:auto;
 }
 
-.loading-spinner-container {
-	//height:20px;
+// these hide errors on forms until they occur
+.form-group .help-block {
+  display: none;
+}
+.form-group.has-error .help-block {
+  display: block;
 }
 
-#admin-view section ul {
-	height: 261px;
+#item-view section ul {
+//	height: 261px;
 	margin-top: 10px;
-	padding: 0px;
-	overflow: auto;
-	border: solid 1px #f5f5f5;
-	border-radius: 5px;
-}
-#admin-view section img {
-	height:20px;
-	width:20px;
+//	overflow: auto;
+//	border: solid 1px #f5f5f5;
+//	border-radius: 5px;
 }
 
-#admin-view section .glyphicon-trash,
-#admin-view section .glyphicon-refresh {
+.glyphicon-trash,
+.glyphicon-refresh {
 	cursor:pointer;
 }
 
@@ -171,40 +170,9 @@ label {
 	border-top: 1px solid white;
 }
 
-/*
- * Main content
- */
-
-@media (min-width: 768px) {
-  .main {
-    //padding-right: 40px;
-    //padding-left: 40px;
-  }
-}
 .main .page-header {
   margin-top: 0;
 }
-
-
-/*
- * Placeholder dashboard ideas
- */
-/*
-.placeholders {
-  margin-bottom: 30px;
-  text-align: center;
-}
-.placeholders h4 {
-  margin-bottom: 0;
-}
-.placeholder {
-  margin-bottom: 20px;
-}
-.placeholder img {
-  display: inline-block;
-  border-radius: 50%;
-}
-*/
 
 .summary-box {
 	min-height:200px;
@@ -214,13 +182,6 @@ label {
 	border-width:1px;
 	cursor: pointer;
 }
-
-.summary-box  h4,
-.summary-box p {
-	padding:10px;
-	overflow:hidden;
-}
-
 
 .exportLayoutView {
     width: 100%;

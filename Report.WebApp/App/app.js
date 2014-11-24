@@ -109,4 +109,5 @@ angular.module('app', ['ui.router', 'ui.bootstrap', 'ngAnimate', 'ngResource', '
 
     	$rootScope.$on('$viewContentLoaded', function () { $(window).resize(); });
 
+    	
   }]);
