@@ -6297,6 +6297,12 @@ body {
 #item-view section ul {
   margin-top: 10px;
 }
+#item-view .glyphicon-trash {
+  top: 4px;
+}
+#item-view .glyphicon-refresh {
+  right: 15px;
+}
 .glyphicon-trash,
 .glyphicon-refresh {
   cursor: pointer;

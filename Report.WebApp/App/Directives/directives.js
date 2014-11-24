@@ -33,23 +33,10 @@ angular.module('app.directives')
 		},
 		templateUrl: 'app/views/loading.html',
 		link: function (scope, element, attrs) {
-			var spinner = new Spinner({ length: 5, width: 2, radius: 3, top: '22px', left: '26%' }).spin();
+			var spinner = new Spinner({ length: 5, width: 2, radius: 3, top: '22px', left: '90%' }).spin();
 			var loadingContainer = element.find('.loading-spinner-container')[0];
 			loadingContainer.appendChild(spinner.el);
 		}
-	};
-})
-.directive('koEnter', function () {
-	return function (scope, element, attrs) {
-		element.bind("keydown keypress", function (event) {
-			if (event.which === 13) {
-				scope.$apply(function () {
-					scope.$eval(attrs.koEnter, { 'event': event });
-				});
-
-				event.preventDefault();
-			}
-		});
 	};
 })
 .directive('showErrors', function () {
