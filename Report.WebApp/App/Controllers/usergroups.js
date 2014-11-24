@@ -1,8 +1,8 @@
 ﻿'use strict';
 
 angular.module('app.controllers')
-.controller("UserGroupController", ['$scope', '$state', '$timeout', '$location', '$window', 'reportService', 
-	function ($scope, $state, $timeout, $location, $window, reportService) {
+.controller("UserGroupController", ['$scope', '$state', '$timeout', '$location', '$window',  
+	function ($scope, $state, $timeout, $location, $window) {
 		$scope.$root.title = 'User Group';
 /*
 		$scope.usergroups = userGroupService;

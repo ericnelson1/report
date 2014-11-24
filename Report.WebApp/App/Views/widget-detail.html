@@ -1,5 +1,8 @@
 ﻿<div class="modal-header">
-	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+	<!--<button type="button" class="close" aria-hidden="true">×</button>-->
+
+	<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+
 	<h3 class="modal-title" ng-hide="new">Edit Widget: {{widget.name}}</h3>
 	<h3 class="modal-title" ng-show="new">New Widget</h3>
 </div>
@@ -17,14 +20,14 @@
 			<p class="help-block" ng-if="widgetForm.age.$error.min || widgetForm.age.$error.max">The widget's age is out of range</p>
 		</div>
 		<div class="form-group" show-errors>
-			<label for="widgetFormColor">color</label>
+			<label for="widgetFormColor">Color</label>
 			<input id="widgetFormColor" type="text" class="form-control" name="color" ng-model="widget.color" placeholder="Enter Color" required />
 			<p class="help-block" ng-if="widgetForm.color.$error.required">The widget's color is required</p>
 		</div>
 	</form>
 
 	<div class="modal-footer">
-		<button type="submit" class="btn btn-primary" data-dismiss="modal" ng-click="save()">Save</button>
-		<button type="submit" class="btn btn-default" data-dismiss="modal" ng-click="">Cancel</button>
+		<button type="submit" class="btn btn-primary" data-dismiss="modal" ng-click="ok()">Save</button>
+		<button type="submit" class="btn btn-default" data-dismiss="modal" ng-click="cancel()">Cancel</button>
 	</div>
 </div>

@@ -1,16 +1,7 @@
 ﻿'use strict';
 
 angular.module('app.directives')
-//angular.module('app.directives',[])
-.directive('summaryBox', function () {
-	return {
-		restrict: 'A',
-		templateUrl: '/app/views/summarybox.html'
-	}
-})
-
-
-.directive('exportSlide', function ($state) {
+.directive('exportSlide', ['$state', function ($state) {
 	return {
 		link: function (scope, elem, attr) {
 			var currentCssClass = $state.current.data;
@@ -21,8 +12,7 @@ angular.module('app.directives')
 			})
 		}
 	}
-})
-
+}])
 .directive('loadingSpinner', function () {
 	return {
 		restrict: 'A',

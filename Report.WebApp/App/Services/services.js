@@ -1,7 +1,7 @@
 ﻿'use strict';
 
 angular.module('app.services', [])
-.service('reportService', function ($rootScope) {
+.service('reportService', ['$rootScope', function ($rootScope) {
 	this.projectsUrl = 'http://localhost:62500/api/reports';
 
 	this.selectProject = function (project) {
@@ -17,7 +17,7 @@ angular.module('app.services', [])
 		this.selectedUserGroup = usergroup;
 		$rootScope.$broadcast('selectedUserGroup');
 	};
-});
+}]);
 
 
 

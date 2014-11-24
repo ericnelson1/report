@@ -14,21 +14,20 @@
 			<section>
 				<h4>
 					Widgets <span class="badge">{{widgets.items.length}}</span>
-					<div loading-spinner="widgets.inprogress">
-						<div class="glyphicon glyphicon-refresh" aria-hidden="true" ng-click="widgets.load()"></div>
-					</div>
+					<span loading-spinner="widgets.inprogress">
+						<span class="pull-right glyphicon glyphicon-refresh" aria-hidden="true" ng-click="widgets.load()"></span>
+					</span>
 				</h4>
-				<button class="btn btn-primary" ng-click="new()" data-toggle="modal" href="#editModal">Create New</button>
-
+				<button class="btn btn-primary" ng-click="create()" data-toggle="modal">Create New</button>
 				<div class="modal hide fade" ng-include="'app/views/widget-detail.html'" id="editModal" role='dialog'></div>
 
 				<ul class="list-group">
-					<li class="list-group-item" ng-repeat="widget in widgets.items">
-						<span class="pull-right glyphicon glyphicon-trash" aria-hidden="true" ng-click="widgets.delete(widget)"></span>
-						<span>Name: {{widget.name}}</span><br />
-						<span>Age: {{widget.age}}</span><br />
-						<span>Color: {{widget.color}}</span>
-						<button class='pull-right btn btn-primary' ng-click="edit(widget)" data-toggle="modal" href="#editModal">Edit</button>
+					<li class="list-group-item clearfix" ng-repeat="widget in widgets.items">
+						<div class="pull-right glyphicon glyphicon-trash" aria-hidden="true" ng-click="widgets.delete(widget)"></div>
+						<div>Name: {{widget.name}}</div>
+						<div>Age: {{widget.age}}</div>
+						<div>Color: {{widget.color}}
+						<button class='pull-right btn btn-primary' ng-click="edit(widget)" data-toggle="modal">Edit</button>
 					</li>
 				</ul>
 			</section>
