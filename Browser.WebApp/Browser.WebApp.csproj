@@ -101,13 +101,8 @@
       <DependentUpon>export.css</DependentUpon>
     </Content>
     <Content Include="Assets\Css\tree-control-attribute.css" />
-    <Content Include="Assets\Css\variables.css">
-      <DependentUpon>variables.less</DependentUpon>
-    </Content>
-    <Content Include="Assets\Css\variables.less" />
-    <Content Include="Assets\Css\variables.min.css">
-      <DependentUpon>variables.css</DependentUpon>
-    </Content>
+    <Content Include="Assets\Css\ui-grid-stable.css" />
+    <Content Include="Assets\Css\ui-layout.css" />
     <Content Include="Assets\Images\1416868594_toggle-expand-alt_blue-edit.png" />
     <Content Include="Assets\Images\1416868594_toggle-expand-alt_blue.png" />
     <Content Include="Assets\Images\1416868604_toggle-collapse-alt_blue-edit.png" />
@@ -133,6 +128,7 @@
     <Content Include="Assets\Images\Relativity.gif" />
     <Content Include="Assets\Images\user-icon.png" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Index2.html" />
     <Content Include="Scripts\angular-animate.js" />
     <Content Include="Scripts\angular-animate.min.js" />
     <Content Include="Scripts\angular-aria.js" />
@@ -893,13 +889,6 @@
     <Content Include="Assets\Css\app.css.map">
       <DependentUpon>app.css</DependentUpon>
     </Content>
-    <Content Include="Assets\Css\variables.css.map">
-      <DependentUpon>variables.css</DependentUpon>
-    </Content>
-    <Content Include="Assets\Css\export.less" />
-    <Content Include="Assets\Css\export.css.map">
-      <DependentUpon>export.css</DependentUpon>
-    </Content>
     <Content Include="Content\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.eot" />
@@ -973,6 +962,13 @@
     <Content Include="Content\bootstrap\bootstrap.less" />
     <Content Include="Content\bootstrap\badges.less" />
     <Content Include="Content\bootstrap\alerts.less" />
+    <Content Include="Scripts\ui-grid-stable.js" />
+    <Content Include="Scripts\ui-grid\3.0.0-rc.16\ui-grid.css" />
+    <Content Include="Scripts\ui-grid\3.0.0-rc.16\ui-grid.js" />
+    <Content Include="Scripts\ui-grid\3.0.0-rc.16\ui-grid.min.css" />
+    <Content Include="Scripts\ui-grid\3.0.0-rc.16\ui-grid.min.js" />
+    <Content Include="Scripts\ui-grid\3.0.0-rc.16\ui-grid.svg" />
+    <Content Include="Scripts\ui-layout.js" />
     <Content Include="Scripts\version.json" />
     <Content Include="Scripts\errors.json" />
     <Content Include="Scripts\angular-touch.min.js.map" />
@@ -985,6 +981,14 @@
     <Content Include="Scripts\angular-aria.min.js.map" />
     <Content Include="Scripts\angular-animate.min.js.map" />
     <Content Include="Scripts\angular.min.js.map" />
+    <Content Include="Assets\Css\export.less" />
+    <Content Include="Assets\Css\variables.less" />
+    <Content Include="Assets\Css\export.css.map">
+      <DependentUpon>export.css</DependentUpon>
+    </Content>
+    <Content Include="Scripts\ui-grid\3.0.0-rc.16\ui-grid.eot" />
+    <Content Include="Scripts\ui-grid\3.0.0-rc.16\ui-grid.ttf" />
+    <Content Include="Scripts\ui-grid\3.0.0-rc.16\ui-grid.woff" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
