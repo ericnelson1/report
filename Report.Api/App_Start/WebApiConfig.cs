@@ -18,7 +18,7 @@ namespace Report.Api
 			// In our case, origin is the location of the web client
 			// http://www.asp.net/web-api/overview/security/enabling-cross-origin-requests-in-web-api
 
-			var cors = new EnableCorsAttribute("http://localhost:63000", "*", "*");
+			var cors = new EnableCorsAttribute("http://localhost:64000", "*", "*");
 			config.EnableCors(cors);
 
 			config.Formatters.JsonFormatter.SerializerSettings.Formatting = Formatting.Indented;

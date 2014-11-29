@@ -1,0 +1,105 @@
+[treecontrol] {
+    /* prevent user selection */
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    /*color: #555;*/
+    text-decoration: none;
+}
+
+[treecontrol] ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: none;
+    overflow: hidden;
+}
+
+[treecontrol] li {
+    position: relative;
+    padding: 0 0 0 20px;
+    line-height: 25px;
+}
+
+[treecontrol] li.tree-expanded i.tree-leaf-head, [treecontrol] li.tree-collapsed i.tree-leaf-head {display:none;}
+[treecontrol] li.tree-expanded i.tree-branch-head, [treecontrol] li.tree-collapsed i.tree-branch-head {display:inline;}
+[treecontrol] li.tree-leaf i.tree-branch-head {display:none;}
+[treecontrol] li.tree-leaf i.tree-leaf-head {display:inline;}
+
+[treecontrol] li i {
+    cursor: pointer;
+}
+
+[treecontrol] li .tree-label {
+    cursor: pointer;
+    display: inline;
+    padding-left:2px;
+}
+
+[treecontrol].tree-classic .tree-checkbox {
+	height: 12px;
+	width: 12px;
+	border: solid grey 1px;
+	display: inline-block;
+	border-radius: 2px;
+	margin-right: 5px;
+}
+
+[treecontrol].tree-classic .tree-checkbox:hover {
+	cursor: pointer;
+}
+
+[treecontrol].tree-classic li.tree-expanded.reviewer i {
+    padding: 3px 20px;
+    background: url("../images/1416868604_toggle-collapse-alt_blue-edit.png") left no-repeat, url("../images/user-icon.png") right no-repeat;
+	background-size: 20px;
+}
+
+[treecontrol].tree-classic li.tree-collapsed.reviewer i {
+    padding: 3px 20px;
+    background: url("../images/1416868594_toggle-expand-alt_blue-edit.png") left no-repeat,  url("../images/user-icon.png") right no-repeat;
+	background-size: 20px;
+}
+
+[treecontrol].tree-classic li.tree-leaf.reviewer i {
+    padding: 3px 20px;
+    background: url("../images/user-icon.png") right no-repeat;
+	background-size: 20px;
+}
+
+[treecontrol].tree-classic li.tree-expanded.folder i {
+    padding: 0px 20px;
+    background: url("../images/1416868604_toggle-collapse-alt_blue-edit.png") left no-repeat, url("../images/FolderOpen.png") right no-repeat;
+	background-size: 20px;
+}
+
+[treecontrol].tree-classic li.tree-collapsed.folder i {
+    padding: 0px 20px;
+    background: url("../images/1416868594_toggle-expand-alt_blue-edit.png") left no-repeat,  url("../images/Folder.png") right no-repeat;
+	background-size: 20px;
+}
+
+[treecontrol].tree-classic li.tree-leaf.folder i {
+    padding: 0px 20px;
+    background: url("../images/Folder.png") right no-repeat;
+	background-size: 20px;
+}
+
+
+
+
+
+
+[treecontrol].tree-classic li .tree-label.tree-selected {
+	/*background-color: #aaddff;*/
+	font-weight: bold;
+}
+
+[treecontrol].tree-classic li .tree-checkbox.tree-selected {
+ 	background: url("../images/Check.gif") no-repeat;
+	background-size: 12px;
+}
+

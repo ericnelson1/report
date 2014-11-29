@@ -1,0 +1,33 @@
+﻿<div class="document-view">
+	<div class="row header-wrapper">
+		<div class="col-sm-5">
+			<h2>Documents</h2>
+			<p>Select the folder you want to produce and click next</p>
+		</div>
+		<div class="col-sm-4">
+			<div class="ko-filter">
+                <input class="form-control" type="text" placeholder="Find Folder" ng-model="predicate.Name" />
+            </div>
+		</div>
+		<div class="col-sm-3">
+			<button class="pull-right btn btn-primary" ng-click="next()">Next &raquo;</button>
+			<button class="pull-right btn btn-primary" ng-click="back()">&laquo; Back</button>
+		</div>
+	</div>
+
+	<div class="row content-wrapper">
+		<!--<div loading-spinner="folders.loading()">-->
+			<div class="col-sm-9">
+                <div treecontrol class="tree-classic"
+                     tree-model="dataForDocument"
+                     options="treeOptions"
+                     on-selection="showSelected(node)"
+                     selected-node="node1"
+                     order-by="Name"
+                      filter-expression="predicate">
+                    ID: {{node.ArtifactId}} Name: {{node.Name}}
+                </div>
+			<!--</div> -->
+		</div>
+	</div>
+</div>

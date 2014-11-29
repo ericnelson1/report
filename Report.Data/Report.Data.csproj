@@ -45,6 +45,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DocumentRepository.cs" />
+    <Compile Include="FolderRepository.cs" />
     <Compile Include="WidgetRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ItemRepository.cs" />

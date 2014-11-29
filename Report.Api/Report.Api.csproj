@@ -118,6 +118,8 @@
     <Compile Include="App_Start\UnityConfig.cs" />
     <Compile Include="App_Start\UnityWebApiActivator.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\DocumentController.cs" />
+    <Compile Include="Controllers\FolderController.cs" />
     <Compile Include="Controllers\ItemController.cs" />
     <Compile Include="Controllers\WidgetController.cs" />
     <Compile Include="Global.asax.cs">
@@ -165,7 +167,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>62503</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:63500/</IISUrl>
+          <IISUrl>http://localhost:63501/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
