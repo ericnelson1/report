@@ -2,6 +2,14 @@
   /*width: 100%; 
     height: 200px;*/
 }
+.main-container {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
 .ui-grid-row:hover {
   background: #CCF5FF;
 }
@@ -10,6 +18,9 @@
 }
 .ui-grid-row-selected {
   color: #00ccff;
+}
+.navbar {
+  background-color: #f3f3f3;
 }
 /* move content down because we have a fixed navbar */
 body {

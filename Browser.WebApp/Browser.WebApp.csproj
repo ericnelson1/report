@@ -128,7 +128,6 @@
     <Content Include="Assets\Images\Relativity.gif" />
     <Content Include="Assets\Images\user-icon.png" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="Index2.html" />
     <Content Include="Scripts\angular-animate.js" />
     <Content Include="Scripts\angular-animate.min.js" />
     <Content Include="Scripts\angular-aria.js" />

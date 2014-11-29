@@ -71,19 +71,21 @@
 }
 
 [treecontrol].tree-classic li.tree-expanded.folder i {
-    padding: 0px 20px;
-    background: url("../images/1416868604_toggle-collapse-alt_blue-edit.png") left no-repeat, url("../images/FolderOpen.png") right no-repeat;
+    padding: 0px 12px;
+    /*background: url("../images/1416868604_toggle-collapse-alt_blue-edit.png") left no-repeat, url("../images/FolderOpen.png") right no-repeat;*/
+    background: url("../images/FolderOpen.png") no-repeat;
 	background-size: 20px;
 }
 
 [treecontrol].tree-classic li.tree-collapsed.folder i {
-    padding: 0px 20px;
-    background: url("../images/1416868594_toggle-expand-alt_blue-edit.png") left no-repeat,  url("../images/Folder.png") right no-repeat;
+    padding: 0px 12px;
+    /*background: url("../images/1416868594_toggle-expand-alt_blue-edit.png") left no-repeat,  url("../images/Folder.png") right no-repeat;*/
+    background: url("../images/Folder.png") no-repeat;
 	background-size: 20px;
 }
 
 [treecontrol].tree-classic li.tree-leaf.folder i {
-    padding: 0px 20px;
+    padding: 0px 12px;
     background: url("../images/Folder.png") right no-repeat;
 	background-size: 20px;
 }
